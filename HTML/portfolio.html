@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #2c2a4a 50%, #f97e12 50%);
+    }
+
+    .whitebox {
+      background: white;
+      position: absolute;
+      width: 68%;
+      height: 80%;
+      top: 11%;
+      left: 210px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row-reverse;
+      position: relative;
+      right: 7%;
+      top: 20px;
+      gap: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .padding {
+      padding-left: 10%;
+      margin-top: 10%;
+      font-size: xxx-large;
+    }
+
+    h2 {
+      padding-left: 10%;
+      font-size: xxx-large;
+      margin-top: -39px;
+    }
+
+    .image {
+      position: relative;
+      left: 65%;
+      bottom: 32%;
+      width: 30%;
+      height: 60%;
+      border: 3px solid #000;
+      border-bottom-left-radius: 52%;
+      background-color: #000;
+      box-shadow: 10px 0 10px 10px #7d7575;
+      overflow: hidden;
+
+    }
+
+    .p1 {
+      margin: -36% 0 0 0;
+      padding-left: 10%;
+      font-size: 18px;
+      color: gray;
+    }
+
+    pre {
+
+      margin-top: -1.6%;
+      padding-left: 9.5%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 18px;
+      color: gray;
+
+    }
+
+    .rectangular-button {
+      display: inline-block;
+      margin-top: 50px;
+      margin-left: 130px;
+      padding: 10px 20px;
+      /* Adjust padding to control button size */
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #fff;
+      /* Text color */
+      background-color: #0e0e0e;
+      /* Button color */
+      border: 2px solid #0a0b0b;
+      /* Border color */
+      cursor: pointer;
+      transition: background-color 0.3s;
+      /* Add smooth transition */
+    }
+
+    /* Hover state for the button */
+    .rectangular-button:hover {
+      background-color: #2980b9;
+      border-color: #080808;
+    }
+
+    .rectangular-button2 {
+      display: inline-block;
+      padding: 10px 20px;
+      /* Adjust padding to control button size */
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+      color: #090909;
+      /* Text color */
+      background-color: white;
+      /* Button color */
+      border: 2px solid #0a0b0b;
+      /* Border color */
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    .rectangular-button2:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="whitebox">
+    <nav>
+      <ul>
+        <li>Contact</li>
+        <li>Project</li>
+        <li>Skills</li>
+        <li>About Me</li>
+      </ul>
+    </nav>
+
+    <h2 class="padding">Hi ____,</h2>
+    <h2>I'm Charles,</h2>
+    <h2>Front-end Developer</h2>
+
+    <div class="image">
+      <img src="Screenshot 2023-12-19 194315.png" alt="">
+    </div>
+    <p class="p1"> I design and develop experiences that make people's lives</p><br>
+    <pre> simpler through Web and mobile apps. I work with Flgma,
+ HTML5,CSS3,Javascript,React,ReactNative and Flutter.</pre>
+
+    <a href="#" class="rectangular-button">HIRE ME</a>
+    <button class="rectangular-button2">SEE MY PROJECTS</button>
+
+  </div>
+</body>
+</html>

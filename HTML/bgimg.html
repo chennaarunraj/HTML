@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .image-container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .hidden-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+    }
+
+    .image-container:hover .hidden-image {
+      opacity: 1;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      z-index: 2;
+    }
+  </style>
+  <title>Hidden Image with Shadow Example</title>
+</head>
+<body>
+
+  <div class="image-container">
+    <img class="hidden-image" src="Screenshot 2023-12-19 194315.png">
+    <div class="content">
+      <!-- Your content goes here -->
+      <p>Hello, this is some text on hover.</p>
+    </div>
+  </div>
+
+</body>
+</html>
